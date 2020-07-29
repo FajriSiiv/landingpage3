@@ -1,0 +1,212 @@
+@import url(https://fonts.googleapis.com/css2?family=Viga&display=swap);
+
+*{
+    padding: 0;
+    margin: 0;
+}
+body {
+  font-family: 'Viga', sans-serif;
+  background-color: rgb(255, 255, 255);
+}
+.navbar .logo{
+  color: rgb(0, 0, 0);
+  transition: .2s;
+}
+.navbar .logo:hover{
+  color: grey;
+}
+.navbar-dark .navbar-nav .nav-link{
+  color: grey;
+  transition: .3s;
+}
+.navbar .item{
+  margin: 0 20px;
+}
+.navbar .item .nav-link{
+  margin: 0 10px;
+}
+.navbar-dark .navbar-nav .nav-link:hover{
+  color: black;
+}
+.navbar .btn{
+  font-size: 18px;
+}
+.tombol{
+  border-radius: 35px;
+  background-color: transparent;
+  color: rgb(187, 182, 182);
+  padding: 5px 10px;
+  outline: none;
+  border: none;
+  transition: .4s;
+}
+.tombol:hover{
+  background-color: transparent;
+  transform: scale(1.08);
+  color: black;
+}
+.navbar i{
+  color: rgb(156, 150, 150);
+}
+/* Jumbotron */
+.jumbotron{
+  width: 100%;
+  background-color: rgb(245, 166, 166);
+}
+.jumbotron .container {
+  margin: auto;
+}
+.jumbotron img{
+  width: 450px;
+  height: 330px;
+  margin-left: 80px;
+}
+.tombol1{
+  background-color: rgb(17, 17, 65);
+  border: none;
+  border-radius: 30px;
+  padding: 3px 40px;
+  transition: 0.3s;
+}
+.cari{
+  margin-bottom: 50px;
+  border-bottom: 2px solid grey;
+}
+.cari h4{
+  text-align: center;
+}
+.cari .row{
+  margin: 0 10px;
+}
+.cari .row div{
+  padding: 15px;
+  margin: 0 10px;
+  box-shadow: 1px 1px 5px black;
+  transition: .4s;
+  cursor: pointer;
+}
+.cari img{
+  width: 180px;
+  height: 130px;
+  margin-bottom: 12px;
+  margin-left: 60px;
+}
+.tombol1:hover{
+  background-color: rgb(255, 255, 255);
+  color: rgb(17, 17, 65);
+}
+.catatan .row{
+  margin: 30px 0;
+}
+.catatan .row div{
+  padding: 10px;
+  box-shadow: 1px 1px 5px black;
+  margin: 20px;
+  transition: .5s;
+  cursor: pointer;
+}
+.catatan i{
+  display: flex;
+  justify-content: center;
+  margin: 10px 0;
+}
+.catatan .heart{
+  color: red;
+}
+.catatan .row div:hover{
+  transform: scale(1.1);
+  background-color: grey;
+}
+.cari .row div:hover{
+  background-color: grey;
+  transform: scale(1.1)
+}
+footer .row i{
+  margin:0 15px;
+}
+.by{
+  text-align: center;
+  margin-top: 35px;
+  background: grey;
+}
+.by p{
+  margin-bottom: 0;
+}
+.catatan h4{
+  text-align: center;
+}
+/* Responsive */
+/* Desktop */
+@media (min-width:996px){
+  .cari .row div:hover{
+    background-color: grey;
+    transform: scale(1.1)
+  }
+  .cari h4{
+    margin: 40px 0;
+  }
+  .cari{
+    padding-bottom: 120px;
+  }
+}
+
+/* Tablet */
+@media (max-width:768px){
+  .cari .row div{
+    width: 350px;
+    height: 300px;
+    margin: 10px 10px 20px 10px;
+  }
+  .cari .row{
+    margin-bottom: 30px ;
+  }
+  .catatan .row div{
+    width: 60%;
+  }
+  .catatan .row div:hover{
+    transform: scale(1.02);
+  }
+}
+
+/* HP */
+@media (max-width:576px){
+  .jumbotron h4{
+    font-size:20px;
+  }
+  .jumbotron p{
+    font-size: 12px;
+  }
+  .tombol1{
+  padding: 2px 20px;
+  background-color: rgb(17, 17, 65);
+  border: none;
+  border-radius: 20px;
+  font-size: 12px;
+  }
+  .jumbotron .container{
+    display: flex;
+    justify-items: center;
+  }
+  .jumbotron img{
+    width: 250px;
+    height: 180px;
+    margin: auto;
+  }
+  .jumbotron .container .img{
+    margin-top: 30px;
+  }
+  .cari .row div{
+    width: 90%;
+    margin: 10px;
+  }
+  .cari .row img{
+    width: 70%;
+    margin-left: 30px;
+  }
+  .catatan i{
+    padding-bottom: 5px;
+  }
+  .catatan .row div{
+    width: 90%;
+  }
+}
